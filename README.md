@@ -8,10 +8,8 @@ Un pipeline **ETL local modulaire**, développé en Python, orchestré avec **Ai
 
 - Extraire les données XML compressées depuis l’API publique [roulez-eco.fr](https://donnees.roulez-eco.fr/opendata/instantane)
 - Décompresser, parser et transformer les données avec pandas
-- Vérifier la qualité des données (prix > 0, valeurs non nulles)
 - Charger dans une base PostgreSQL locale
 - Orchestrer le tout avec Apache Airflow (Docker)
-- Nettoyer automatiquement les fichiers sources
 - Centraliser les paramètres dans un fichier `.env`
 
 ---
