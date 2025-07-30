@@ -81,8 +81,6 @@ docker-compose up --build
 
 - Suppression des lignes avec `prix <= 0` ou valeurs manquantes
 - Parsing strict des dates et types numériques
-- Tâche `cleanup_files` intégrée au DAG
-
 ---
 
 ## 🔄 DAG Airflow
@@ -92,7 +90,6 @@ Le pipeline Airflow est composé de 4 tâches :
 1. `extract_data` – Télécharge et décompresse les données XML
 2. `transform_data` – Nettoie et transforme les données
 3. `load_data` – Charge les données dans PostgreSQL
-4. `cleanup_files` – Supprime les fichiers temporaires
 
 Planifié toutes les **10 minutes** (`*/10 * * * *`).
 
@@ -100,7 +97,6 @@ Planifié toutes les **10 minutes** (`*/10 * * * *`).
 
 ## ✅ Améliorations possibles
 
-- Ajouter des tests unitaires (avec pytest)
 - Visualiser les données avec Streamlit ou Metabase
 - Sauvegarder en Parquet pour simuler un datalake
 - API FastAPI pour interroger les données
@@ -111,7 +107,7 @@ Planifié toutes les **10 minutes** (`*/10 * * * *`).
 
 **Manssour Ghorbel**  
 Projet personnel de formation en data engineering  
-📫 [LinkedIn](https://www.linkedin.com/in/ghorbelmanssour/) *(à adapter si besoin)*
+📫 [LinkedIn](https://www.linkedin.com/in/mohamed-manssour-ghorbel-a93a8813b/)
 
 ---
 
