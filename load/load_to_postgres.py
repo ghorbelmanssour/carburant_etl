@@ -1,9 +1,9 @@
 import pandas as pd
 import psycopg2
-from config.db_config import DB_CONFIG
+from config.config import DB_CONFIG, CLEAN_DATA_PATH
 
 def load_to_db():
-    df = pd.read_csv("/opt/airflow/data/clean.csv")
+    df = pd.read_csv(CLEAN_DATA_PATH)
 
     conn = psycopg2.connect(**DB_CONFIG)
     cursor = conn.cursor()

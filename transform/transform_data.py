@@ -1,12 +1,10 @@
 import xml.etree.ElementTree as ET
 import pandas as pd
 import os
+from config.config import RAW_DATA_PATH, CLEAN_DATA_PATH
 
 def transform_xml():
-    xml_path = "/opt/airflow/data/PrixCarburants_instantane.xml"
-    output_path = "/opt/airflow/data/clean.csv"
-
-    tree = ET.parse(xml_path)
+    tree = ET.parse(RAW_DATA_PATH)
     root = tree.getroot()
 
     rows = []
@@ -34,6 +32,8 @@ def transform_xml():
             })
 
     df = pd.DataFrame(rows)
+    df.dropna(subset=["prix"], inplace=True)
+    df = df[df["prix"] > 0]
     df["date_maj"] = pd.to_datetime(df["date_maj"])
-    df.to_csv(output_path, index=False)
-    print("✅ Données transformées sauvegardées dans", output_path)
+    df.to_csv(CLEAN_DATA_PATH, index=False)
+    print("✅ Données transformées sauvegardées dans", CLEAN_DATA_PATH)
