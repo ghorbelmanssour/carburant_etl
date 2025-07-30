@@ -1114,3 +1114,101 @@ ModuleNotFoundError: No module named 'config.config'; 'config' is not a package
 [2025-07-30T19:53:55.411+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:53:55.411+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-07-30T19:53:55.426+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:53:55.426+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
 [2025-07-30T19:53:55.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.236 seconds
+[2025-07-30T19:54:25.665+0000] {processor.py:161} INFO - Started process (PID=524) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:54:25.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:54:25.668+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:54:25.668+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:54:25.845+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:54:25.858+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:54:25.858+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:54:25.868+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:54:25.868+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:54:25.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.219 seconds
+[2025-07-30T19:54:56.010+0000] {processor.py:161} INFO - Started process (PID=530) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:54:56.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:54:56.025+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:54:56.023+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:54:56.246+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:54:56.263+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:54:56.263+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:54:56.276+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:54:56.276+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:54:56.424+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.424 seconds
+[2025-07-30T19:55:26.655+0000] {processor.py:161} INFO - Started process (PID=536) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:55:26.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:55:26.658+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:55:26.657+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:55:26.821+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:55:26.835+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:55:26.835+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:55:26.946+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:55:26.946+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:55:26.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.305 seconds
+[2025-07-30T19:55:57.271+0000] {processor.py:161} INFO - Started process (PID=542) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:55:57.272+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:55:57.276+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:55:57.275+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:55:57.474+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:55:57.492+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:55:57.491+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:55:57.502+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:55:57.502+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:55:57.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.249 seconds
+[2025-07-30T19:56:27.793+0000] {processor.py:161} INFO - Started process (PID=548) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:56:27.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:56:27.796+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:56:27.796+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:56:28.000+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:56:28.023+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:56:28.022+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:56:28.039+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:56:28.039+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:56:28.053+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.270 seconds
+[2025-07-30T19:56:58.354+0000] {processor.py:161} INFO - Started process (PID=554) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:56:58.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:56:58.357+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:56:58.357+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:56:58.531+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:56:58.547+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:56:58.547+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:56:58.558+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:56:58.558+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:56:58.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.223 seconds
+[2025-07-30T19:57:28.672+0000] {processor.py:161} INFO - Started process (PID=560) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:57:28.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:57:28.677+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:57:28.676+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:57:28.882+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:57:28.899+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:57:28.899+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:57:28.912+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:57:28.912+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:57:28.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.259 seconds
+[2025-07-30T19:57:59.106+0000] {processor.py:161} INFO - Started process (PID=566) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:57:59.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:57:59.109+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:57:59.109+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:57:59.295+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:57:59.311+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:57:59.311+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:57:59.324+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:57:59.324+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:57:59.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.347 seconds
+[2025-07-30T19:58:29.730+0000] {processor.py:161} INFO - Started process (PID=572) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:58:29.731+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:58:29.733+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:58:29.732+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:58:29.913+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:58:29.928+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:58:29.928+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:58:30.023+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:58:30.023+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:58:30.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.309 seconds
+[2025-07-30T19:59:00.322+0000] {processor.py:161} INFO - Started process (PID=578) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:59:00.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:59:00.323+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:59:00.323+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:59:00.503+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:59:00.526+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:59:00.526+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:59:00.538+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:59:00.537+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:59:00.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.229 seconds
+[2025-07-30T19:59:30.670+0000] {processor.py:161} INFO - Started process (PID=584) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:59:30.671+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T19:59:30.675+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:59:30.674+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:59:30.940+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T19:59:30.962+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:59:30.961+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T19:59:30.977+0000] {logging_mixin.py:188} INFO - [2025-07-30T19:59:30.977+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 19:50:00+00:00, run_after=2025-07-30 20:00:00+00:00
+[2025-07-30T19:59:30.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.350 seconds
+[2025-07-30T20:00:01.019+0000] {processor.py:161} INFO - Started process (PID=593) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:00:01.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T20:00:01.021+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:00:01.021+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:00:01.208+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:00:01.221+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:00:01.221+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T20:00:01.232+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:00:01.231+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 20:00:00+00:00, run_after=2025-07-30 20:10:00+00:00
+[2025-07-30T20:00:01.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.225 seconds
+[2025-07-30T20:00:31.311+0000] {processor.py:161} INFO - Started process (PID=605) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:00:31.312+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T20:00:31.314+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:00:31.314+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:00:31.558+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:00:31.578+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:00:31.578+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T20:00:31.592+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:00:31.591+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 20:00:00+00:00, run_after=2025-07-30 20:10:00+00:00
+[2025-07-30T20:00:31.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.298 seconds
+[2025-07-30T20:01:01.765+0000] {processor.py:161} INFO - Started process (PID=611) to work on /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:01:01.766+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_carburant.py for tasks to queue
+[2025-07-30T20:01:01.768+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:01:01.767+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:01:02.041+0000] {processor.py:840} INFO - DAG(s) 'carburant_etl_dag' retrieved from /opt/airflow/dags/etl_carburant.py
+[2025-07-30T20:01:02.060+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:01:02.060+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-30T20:01:02.079+0000] {logging_mixin.py:188} INFO - [2025-07-30T20:01:02.079+0000] {dag.py:3954} INFO - Setting next_dagrun for carburant_etl_dag to 2025-07-30 20:00:00+00:00, run_after=2025-07-30 20:10:00+00:00
+[2025-07-30T20:01:02.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_carburant.py took 0.447 seconds
