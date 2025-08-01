@@ -1,8 +1,9 @@
 import xml.etree.ElementTree as ET
 import pandas as pd
 import os
-from config.config import RAW_DATA_PATH, CLEAN_DATA_PATH
+from config.config import RAW_DATA_PATH, CLEAN_DATA_PATH, PARQUET_BRONZE_DIR
 from config.log_utils import log_etl_event
+from datetime import datetime
 
 
 def transform_xml(**context):
@@ -40,9 +41,20 @@ def transform_xml(**context):
         df.dropna(subset=["prix"], inplace=True)
         df = df[df["prix"] > 0]
         df["date_maj"] = pd.to_datetime(df["date_maj"])
-        df.to_csv(CLEAN_DATA_PATH, index=False)
 
+        df.to_csv(CLEAN_DATA_PATH, index=False)
         print("✅ Données transformées sauvegardées dans", CLEAN_DATA_PATH)
+
+        # Créer le dossier Parquet si besoin
+        os.makedirs(PARQUET_BRONZE_DIR, exist_ok=True)
+        
+        # Nom du fichier daté
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        parquet_path = os.path.join(PARQUET_BRONZE_DIR, f"{date_str}.parquet")
+
+        df.to_parquet(parquet_path, index=False)
+        print(f"✅ Données sauvegardées au format Parquet dans {parquet_path}")
+            
         log_etl_event("transform_data", "SUCCESS", "Transformation OK", execution_time)
 
     except Exception as e:
