@@ -10,6 +10,8 @@ Un pipeline **ETL local modulaire**, développé en Python, orchestré avec **Ai
 - Décompresser, parser et transformer les données avec pandas
 - Charger dans une base PostgreSQL locale
 - Orchestrer le tout avec Apache Airflow (Docker)
+- Exporter les données en **CSV**
+- Exporter les données en **Parquet** avec une structure type **Data Lake (bronze)**
 - Centraliser les paramètres dans un fichier `.env`
 - Visualiser les données avec Streamlit
 
@@ -22,6 +24,7 @@ Un pipeline **ETL local modulaire**, développé en Python, orchestré avec **Ai
 - PostgreSQL 15
 - pandas
 - psycopg2
+- pyarrow
 - dotenv
 - Docker / docker-compose
 - Streamlit
@@ -41,6 +44,7 @@ cd carburant_etl
 
 ```bash
 mkdir -p airflow/data airflow/logs airflow/plugins
+mkdir -p airflow/data/parquet/bronze
 ```
 
 ### 3. Créer le fichier `.env`
@@ -54,6 +58,7 @@ DB_PASSWORD=airflow
 
 RAW_DATA_PATH=/opt/airflow/data/PrixCarburants_instantane.xml
 CLEAN_DATA_PATH=/opt/airflow/data/clean.csv
+PARQUET_BRONZE_DIR=/opt/airflow/data/parquet/bronze
 DATA_DIR=/opt/airflow/data
 ```
 
@@ -82,6 +87,7 @@ docker-compose up --build
 
 - Suppression des lignes avec `prix <= 0` ou valeurs manquantes
 - Parsing strict des dates et types numériques
+- Historisation des données Parquet dans un dossier daté (ex: /data/parquet/bronze/2025-08-01_20-45.parquet)
 ---
 
 ## 🔄 DAG Airflow
@@ -89,8 +95,8 @@ docker-compose up --build
 Le pipeline Airflow est composé de 4 tâches :
 
 1. `extract_data` – Télécharge et décompresse les données XML
-2. `transform_data` – Nettoie et transforme les données
-3. `load_data` – Charge les données dans PostgreSQL
+2. `transform_data` – Nettoie les données et les sauvegarde en CSV et Parquet
+3. `load_data` – Charge les données dans PostgreSQL (depuis CSV et Parquet)
 
 Planifié toutes les **10 minutes** (`*/10 * * * *`).
 
