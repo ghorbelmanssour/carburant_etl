@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 # Charge les variables du fichier .env
-load_dotenv(dotenv_path='/opt/airflow/.env')
+load_dotenv()
 
 # Base de données
 DB_CONFIG = {

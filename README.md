@@ -11,6 +11,7 @@ Un pipeline **ETL local modulaire**, développé en Python, orchestré avec **Ai
 - Charger dans une base PostgreSQL locale
 - Orchestrer le tout avec Apache Airflow (Docker)
 - Centraliser les paramètres dans un fichier `.env`
+- Visualiser les données avec Streamlit
 
 ---
 
@@ -23,6 +24,7 @@ Un pipeline **ETL local modulaire**, développé en Python, orchestré avec **Ai
 - psycopg2
 - dotenv
 - Docker / docker-compose
+- Streamlit
 
 ---
 
@@ -61,11 +63,10 @@ DATA_DIR=/opt/airflow/data
 docker-compose up --build
 ```
 
-### 5. Accéder à Airflow
+### 5. Accéder aux interfaces
 
-- URL : [http://localhost:8080](http://localhost:8080)
-- Identifiant : `admin`
-- Mot de passe : `admin`
+- **Airflow** : [http://localhost:8080](http://localhost:8080) (`admin` / `admin`)
+- **Streamlit** : [http://localhost:8501](http://localhost:8501)
 
 ---
 
@@ -95,17 +96,9 @@ Planifié toutes les **10 minutes** (`*/10 * * * *`).
 
 ---
 
-## ✅ Améliorations possibles
-
-- Visualiser les données avec Streamlit ou Metabase
-- Sauvegarder en Parquet pour simuler un datalake
-- API FastAPI pour interroger les données
-
----
-
 ## 👨‍💻 Auteur
 
-**Manssour Ghorbel**  
+**Mohamed Manssour Ghorbel**  
 Projet personnel de formation en data engineering  
 📫 [LinkedIn](https://www.linkedin.com/in/mohamed-manssour-ghorbel-a93a8813b/)
 
